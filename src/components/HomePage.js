@@ -9,6 +9,13 @@ function HomePage() {
       <Link to="about" className="btn btn-primary">
         About
       </Link>
+      <Link
+        to="zzzzpagenotfoundzzzz"
+        className="btn btn-danger"
+        style={{ margin: "1%" }}
+      >
+        404 Page
+      </Link>
     </div>
   );
 }

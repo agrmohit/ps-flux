@@ -4,7 +4,7 @@ import ErrorImage from "../404.png";
 
 function PageNotFound() {
   return (
-    <div style={{ textAlign: "center" }}>
+    <div className="jumbotron" style={{ textAlign: "center" }}>
       <img src={ErrorImage} alt="Page Not Found" width={"50%"} />
       {/* <h2>Page Not Found</h2> */}
       <p style={{ paddingTop: "1em" }}>
