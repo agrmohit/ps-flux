@@ -1,17 +1,44 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Header() {
+  const idleStyle = {
+    backgroundColor: "hsl(210, 100%, 98%)",
+    borderRadius: 5,
+    border: "solid 1px",
+    borderColor: "hsl(210, 100%, 90%)",
+  };
+  const activeStyle = {
+    backgroundColor: "hsl(0, 0%, 94%)",
+    borderColor: "hsl(0, 0%, 90%)",
+  };
   return (
     <nav className="navbar">
-      <a href="/" className="nav-item">
+      <NavLink
+        to="/"
+        className="nav-link"
+        style={idleStyle}
+        activeStyle={activeStyle}
+        exact
+      >
         Home
-      </a>
-      <a href="/courses" className="nav-item">
+      </NavLink>
+      <NavLink
+        to="/courses"
+        className="nav-link"
+        style={idleStyle}
+        activeStyle={activeStyle}
+      >
         Courses
-      </a>
-      <a href="/about" className="nav-item">
+      </NavLink>
+      <NavLink
+        to="/about"
+        className="nav-link"
+        style={idleStyle}
+        activeStyle={activeStyle}
+      >
         About
-      </a>
+      </NavLink>
     </nav>
   );
 }
